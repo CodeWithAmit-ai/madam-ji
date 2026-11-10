@@ -959,7 +959,7 @@ const loveLetters = [
     {
         title: "A Little Reminder ♥",
 
-        message: `Hey Madam Ji(singdha),
+        message: `Hey Madam Ji(singdha ❤️),
 
 Just a little reminder that you are special in your own way.
 
