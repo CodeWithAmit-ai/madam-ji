@@ -401,27 +401,27 @@ const questions = [
     },
 
     {
-        question: "Ekta cute date e jete chaibe?",
+        question: "Achha amar sathe akta room aka thakte bhoy lagbe?",
 
-        yes: "Perfect! Date er location ami choose korbo! ❤️",
+        yes: "Tumi kintu jano amar intention 🫦",
 
         no: "No pressure! Tomar comfort first. 😊"
     },
 
     {
-        question: "Rainy day te coffee ar adda pochondo?",
+        question: "Rainy day te jodi amra aksathe asi r oisob kori he he?",
 
-        yes: "Same here! Brishti, coffee ar golpo! ☕",
+        yes: "Achha ami aka na tahole",
 
         no: "Tahole rainy day te tomar jonno onno plan lagbe! 😂"
     },
 
     {
-        question: "Ami jodi tomar jonno ekta gaan dedicate kori, shunbe?",
+        question: "jodi ami relation na thaki kintu tomar sathei thaki acecpt korbe naki commitment chara amara kichui korte parbona?",
 
-        yes: "Already choosing a special song! 🎵",
+        yes: "okay nice choice",
 
-        no: "Ouch! Amar music taste er upor doubt ache naki? 😂"
+        no: "i respect your decission"
     },
 
     {
