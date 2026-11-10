@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090607">
+    <meta name="description" content="A little world made especially for Madam Ji.">
+
+    <title>Madam Ji | A Little World</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-glow"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="top-bar">
+
+        <a href="#" class="brand">M<span>♥</span>J</a>
+
+        <button class="music-button" id="musicButton">
+            <span id="musicIcon">♫</span>
+            <span id="musicText">SOUND OFF</span>
+        </button>
+
+    </header>
+
+
+    <!-- SCREEN 1: WELCOME -->
+    <main class="welcome-screen" id="welcomeScreen">
+
+        <section class="hero">
+
+            <div class="rose-decoration">
+                <span>✦</span>
+                <span>♥</span>
+                <span>✦</span>
+            </div>
+
+            <p class="eyebrow">A PRIVATE LITTLE WORLD</p>
+
+            <h1>Madam <span>Ji</span></h1>
+
+            <div class="title-divider">
+                <span></span>
+                <i>♥</i>
+                <span></span>
+            </div>
+
+            <p class="subtitle">
+                Not just another website...
+                <br>
+                A little world made especially for you.
+            </p>
+
+            <p class="invitation">
+                Some doors are worth opening.
+                <br>
+                Shall we begin?
+            </p>
+
+            <button class="enter-button" id="enterButton">
+                <span>ENTER MY WORLD</span>
+                <span class="button-arrow">→</span>
+            </button>
+
+            <p class="bottom-note">
+                MADE WITH A LITTLE LOVE <span>♥</span>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- SCREEN 2: REVEAL -->
+    <section class="reveal-screen" id="revealScreen">
+
+        <div class="reveal-content">
+
+            <span class="reveal-heart">♥</span>
+
+            <p class="eyebrow">WELL, WELL, WELL...</p>
+
+            <h2>Look who's <span>here.</span></h2>
+
+            <p class="reveal-message">
+                Welcome, Madam Ji.
+                <br><br>
+                I've made a little something for you.
+                Take your time, explore and enjoy every moment.
+            </p>
+
+            <button class="enter-button explore-button" id="exploreButton">
+                EXPLORE MY WORLD →
+            </button>
+
+            <button class="back-button" id="backButton">
+                GO BACK
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 3: DASHBOARD -->
+    <main class="dashboard-screen" id="dashboardScreen">
+
+        <section class="dashboard-content">
+
+            <div class="dashboard-heading">
+
+                <p class="eyebrow">YOUR LITTLE ESCAPE</p>
+
+                <h2>
+                    Hello, <span>Madam Ji.</span>
+                </h2>
+
+                <p class="dashboard-subtitle">
+                    Every little corner here has something for you.
+                </p>
+
+            </div>
+
+
+            <!-- Feature Cards -->
+            <div class="feature-grid">
+
+                <button class="feature-card" data-feature="letters">
+
+                    <span class="feature-icon">♡</span>
+
+                    <span class="feature-name">Love Letters</span>
+
+                    <span class="feature-description">
+                        A few words from the heart.
+                    </span>
+
+                    <span class="feature-arrow">↗</span>
+
+                </button>
+
+
+                <button class="feature-card" data-feature="yesno">
+
+                    <span class="feature-icon">✦</span>
+
+                    <span class="feature-name">Yes or No</span>
+
+                    <span class="feature-description">
+                        A little game of choices.
+                    </span>
+
+                    <span class="feature-arrow">↗</span>
+
+                </button>
+
+
+                <button class="feature-card" data-feature="truth">
+
+                    <span class="feature-icon">☾</span>
+
+                    <span class="feature-name">Truth or Dare</span>
+
+                    <span class="feature-description">
+                        Questions and fun challenges.
+                    </span>
+
+                    <span class="feature-arrow">↗</span>
+
+                </button>
+
+
+                <button class="feature-card" data-feature="secret">
+
+                    <span class="feature-icon">♢</span>
+
+                    <span class="feature-name">Secret Room</span>
+
+                    <span class="feature-description">
+                        Something is waiting for you.
+                    </span>
+
+                    <span class="feature-arrow">↗</span>
+
+                </button>
+
+
+                <button class="feature-card final-card" data-feature="surprise">
+
+                    <span class="feature-icon">♥</span>
+
+                    <span class="feature-name">Final Surprise</span>
+
+                    <span class="feature-description">
+                        Save this one for later.
+                    </span>
+
+                    <span class="feature-arrow">↗</span>
+
+                    
+                </button>
+
+            </div>
+
+
+            <p class="dashboard-footer">
+                MADE WITH LOVE, JUST FOR YOU <span>♥</span>
+            </p>
+
+        </section>
+
+    </main>
+
+<!-- =================================
+     PHASE 3: YES OR NO GAME
+================================= -->
+
+<section class="game-screen" id="yesNoScreen">
+
+    <div class="game-container">
+
+        <!-- Game Header -->
+
+        <div class="game-header">
+
+            <button class="game-back" id="gameBack">
+                ← BACK
+            </button>
+
+            <span class="game-label">A LITTLE GAME ♥</span>
+
+        </div>
+
+
+        <!-- Game Intro -->
+
+        <div class="game-intro" id="gameIntro">
+
+            <span class="game-heart">♥</span>
+
+            <p class="eyebrow">LET'S PLAY SOMETHING</p>
+
+            <h2>Yes or <span>No?</span></h2>
+
+            <p>
+                Kichu simple questions...
+                <br>
+                Just answer honestly, okay? 😉
+            </p>
+
+            <button class="game-start" id="startGame">
+                LET'S PLAY →
+            </button>
+
+        </div>
+
+
+        <!-- Question Area -->
+
+        <div class="question-area" id="questionArea">
+
+            <div class="question-progress">
+
+                <span id="questionNumber">QUESTION 01 / 08</span>
+
+                <span id="progressPercent">0%</span>
+
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <span class="question-heart">♡</span>
+
+                <p class="question-small">
+                    BE HONEST WITH ME
+                </p>
+
+                <h2 id="questionText">
+                    Tumi ki surprise pochondo koro?
+                </h2>
+
+                <p class="question-hint">
+                    Choose one. No cheating! 😉
+                </p>
+
+            </div>
+
+
+            <!-- Answer Buttons -->
+
+            <div class="answer-buttons">
+
+                <button class="answer-btn yes-btn" id="yesButton">
+                    YES ♥
+                </button>
+
+                <button class="answer-btn no-btn" id="noButton">
+                    NO ✕
+                </button>
+
+            </div>
+
+
+            <!-- Answer Feedback -->
+
+            <div class="answer-feedback" id="answerFeedback"></div>
+
+            <button class="next-question" id="nextQuestion">
+                NEXT QUESTION →
+            </button>
+
+        </div>
+
+
+        <!-- Final Result -->
+
+        <div class="game-result" id="gameResult">
+
+            <span class="result-heart">♥</span>
+
+            <p class="eyebrow">GAME COMPLETED</p>
+
+            <h2>That's a <span>wrap!</span></h2>
+
+            <p id="resultMessage">
+                Thank you for playing!
+            </p>
+
+            <button class="game-start" id="playAgain">
+                PLAY AGAIN ↻
+            </button>
+
+            <button class="result-back" id="resultBack">
+                BACK TO MY WORLD
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     PHASE 4: TRUTH OR DARE
+================================= -->
+
+<section class="truth-screen" id="truthScreen">
+
+    <div class="truth-container">
+
+        <!-- Header -->
+
+        <div class="truth-header">
+
+            <button class="game-back" id="truthBack">
+                ← BACK
+            </button>
+
+            <span class="game-label">A LITTLE CHALLENGE ♥</span>
+
+        </div>
+
+
+        <!-- Intro -->
+
+        <div class="truth-intro" id="truthIntro">
+
+            <span class="game-heart">♡</span>
+
+            <p class="eyebrow">READY FOR SOME FUN?</p>
+
+            <h2>Truth or <span>Dare?</span></h2>
+
+            <p>
+                Ekta choose koro...
+                <br>
+                Let's see how brave you are! 😉
+            </p>
+
+            <div class="truth-choice">
+
+                <button class="choice-button" data-mode="truth">
+                    <span>♡</span>
+                    TRUTH
+                </button>
+
+                <button class="choice-button" data-mode="dare">
+                    <span>✦</span>
+                    DARE
+                </button>
+
+            </div>
+
+            <p class="truth-note">
+                No pressure. Skip anything you don't like. ❤️
+            </p>
+
+        </div>
+
+
+        <!-- Challenge Screen -->
+
+        <div class="challenge-area" id="challengeArea">
+
+            <div class="challenge-top">
+
+                <span id="challengeMode">TRUTH TIME</span>
+
+                <span id="challengeCount">CHALLENGE 01</span>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <span class="challenge-icon" id="challengeIcon">♡</span>
+
+                <p class="eyebrow">YOUR CHALLENGE</p>
+
+                <h2 id="challengeText">
+                    What's your biggest secret?
+                </h2>
+
+                <p class="challenge-subtitle" id="challengeSubtitle">
+                    Be honest, Madam Ji!
+                </p>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="challenge-buttons">
+
+                <button class="skip-button" id="skipChallenge">
+                    SKIP ↻
+                </button>
+
+                <button class="next-button" id="nextChallenge">
+                    NEXT →
+                </button>
+
+            </div>
+
+
+            <p class="challenge-footer">
+                PLAY AT YOUR OWN PACE ♥
+            </p>
+
+        </div>
+
+
+        <!-- Completion Screen -->
+
+        <div class="truth-complete" id="truthComplete">
+
+            <span class="result-heart">♥</span>
+
+            <p class="eyebrow">THAT WAS FUN!</p>
+
+            <h2>You're a <span>star!</span></h2>
+
+            <p id="truthFinalMessage">
+                Thanks for playing, Madam Ji!
+            </p>
+
+            <button class="game-start" id="truthPlayAgain">
+                PLAY AGAIN ↻
+            </button>
+
+            <button class="result-back" id="truthDashboard">
+                BACK TO MY WORLD
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PHASE 5: LOVE LETTERS -->
+<section class="letters-screen" id="lettersScreen">
+
+    <div class="letters-container">
+
+        <div class="letters-header">
+            <button class="game-back" id="lettersBack">← BACK</button>
+            <span class="game-label">A LITTLE LOVE FROM ME ♥</span>
+        </div>
+
+        <div class="letters-heading">
+            <span class="letter-small-text">SOME WORDS FOR YOU</span>
+            <h1>My Little Letters 💌</h1>
+            <p>Because sometimes, words can say what hearts feel.</p>
+        </div>
+
+        <!-- Envelope view -->
+        <div class="letter-envelope-area" id="letterEnvelopeArea">
+
+            <div class="letter-envelope" id="letterEnvelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-paper"></div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-heart">♥</div>
+            </div>
+
+            <p class="envelope-hint">Tap the envelope to open your letter</p>
+
+            <button class="letter-open-button" id="openLetter">
+                OPEN MY LETTER ♥
+            </button>
+
+        </div>
+
+        <!-- Letter content -->
+        <div class="letter-content" id="letterContent">
+
+            <div class="letter-paper">
+                <span class="letter-number" id="letterNumber">
+                    LETTER 1 OF 3
+                </span>
+
+                <h2 id="letterTitle">A Little Reminder</h2>
+
+                <div class="letter-divider">♡ ✦ ♡</div>
+
+                <p id="letterMessage"></p>
+
+                <div class="letter-signature">
+                    With lots of love, <br>
+                    <span>Someone who cares about you ♥</span>
+                </div>
+            </div>
+
+            <div class="letter-navigation">
+                <button class="letter-next-button" id="nextLetter">
+                    NEXT LETTER →
+                </button>
+
+                <button class="letter-close-button" id="closeLetter">
+                    CLOSE LETTER
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- PHASE 6: SURPRISE ME -->
+<section class="surprise-screen" id="surpriseScreen">
+
+    <div class="surprise-container">
+
+        <div class="surprise-header">
+            <button class="game-back" id="surpriseBack">← BACK</button>
+            <span class="game-label">A LITTLE SURPRISE ♥</span>
+        </div>
+
+        <div class="surprise-heading">
+            <span class="surprise-small-text">JUST FOR YOU</span>
+            <h1>Something Special 🎁</h1>
+            <p>Because you deserve a little happiness today.</p>
+        </div>
+
+        <!-- Gift box -->
+        <div class="gift-area" id="giftArea">
+
+            <div class="gift-box" id="giftBox">
+
+                <div class="gift-lid">
+                    <div class="gift-bow"></div>
+                </div>
+
+                <div class="gift-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+
+            </div>
+
+            <p class="gift-hint">I have something for you...</p>
+
+            <button class="surprise-open-button" id="revealSurprise">
+                UNWRAP YOUR SURPRISE ♥
+            </button>
+
+        </div>
+
+        <!-- Surprise message -->
+        <div class="surprise-result" id="surpriseResult">
+
+            <div class="surprise-heart">♥</div>
+
+            <span class="surprise-small-text">A LITTLE MESSAGE FOR YOU</span>
+
+            <h2 id="surpriseTitle">You Are Special!</h2>
+
+            <p id="surpriseMessage"></p>
+
+            <button class="surprise-again-button" id="anotherSurprise">
+                ONE MORE SURPRISE ✨
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- FEATURE POPUP -->
+    <div class="feature-modal" id="featureModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                ×
+            </button>
+
+            <span class="reveal-heart">♥</span>
+
+            <p class="eyebrow">A LITTLE SOMETHING</p>
+
+            <h2 id="modalTitle">Coming soon</h2>
+
+            <p id="modalDescription" class="reveal-message">
+                Something special is being prepared.
+            </p>
+
+            <button class="back-button" id="modalOkay">
+                BACK TO MY WORLD
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Music -->
+    <audio id="backgroundMusic" loop preload="none">
+        <source src="assets/audio/romantic.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
